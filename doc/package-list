@@ -1,0 +1,13 @@
+com.kars.downloader
+com.kars.downloader.config
+com.kars.downloader.controller
+com.kars.downloader.dao
+com.kars.downloader.entities
+com.kars.downloader.enums
+com.kars.downloader.exception
+com.kars.downloader.factory
+com.kars.downloader.helper
+com.kars.downloader.service
+com.kars.downloader.service.adapter
+com.kars.downloader.service.impl
+com.kars.downloader.vo
