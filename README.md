@@ -39,10 +39,13 @@ $ java -jar *.jar
 ```
 
 ### API documentation
-The Server is configured to start at 8080 port and contextPath fileDownloader
-[Documentation](https://documenter.getpostman.com/view/97091/S11RKFZm#1f61ad0d-d25d-fbd1-b512-100a142543f3)
+The Server is configured to start at 8080 port and contextPath fileDownloader.
 
 ```
 http://{server:8080}/fileDownloader
 ```
+
+Refer the link below for the API documentation.
+
+[Documentation](https://documenter.getpostman.com/view/97091/S11RKFZm#1f61ad0d-d25d-fbd1-b512-100a142543f3)
 
