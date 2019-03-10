@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-File Downloaded is a simple spring boot app, which supports  download of huge files in http, ftp and sftp requests.
+File Downloaded is a simple spring boot app, which supports  download of large files in http, ftp and sftp requests.
 
 # Features!
 
