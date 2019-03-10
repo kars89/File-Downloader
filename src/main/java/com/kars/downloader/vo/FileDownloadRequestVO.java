@@ -29,6 +29,22 @@ public class FileDownloadRequestVO implements Serializable {
 		private String username;
 		private String password;
 
+		public URLDetailsVO() {
+
+		}
+
+		public URLDetailsVO(String url, String username, String password) {
+			super();
+			this.url = url;
+			this.username = username;
+			this.password = password;
+		}
+
+		public URLDetailsVO(String url) {
+			super();
+			this.url = url;
+		}
+
 		public String getUrl() {
 			return url;
 		}

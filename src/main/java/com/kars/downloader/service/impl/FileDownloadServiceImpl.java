@@ -75,8 +75,8 @@ public class FileDownloadServiceImpl implements FileDownloadService {
 	 * @return CompletableFuture
 	 */
 	@Async("file_download_task_executor")
-	public CompletableFuture<Void> downloadFileAsync(URLDetailsVO urlDetails) {
-		return CompletableFuture.runAsync(() -> {
+	public CompletableFuture<Long> downloadFileAsync(URLDetailsVO urlDetails) {
+		return CompletableFuture.supplyAsync(() -> {
 
 			String url = urlDetails.getUrl();
 
@@ -107,6 +107,7 @@ public class FileDownloadServiceImpl implements FileDownloadService {
 				logger.error("Exception Occurred", e);
 				statusUpdaterService.failed(resultId, e.getMessage());
 			}
+			return resultId;
 		}, taskExecutor);
 
 	}

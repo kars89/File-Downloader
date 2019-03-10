@@ -25,14 +25,17 @@ public class ValidationException extends Exception {
 	}
 
 	public ValidationException(String msg) {
+		super(Errors.GENERIC_ERROR.getMsg());
 		this.errors.add(Errors.GENERIC_ERROR);
 	}
 
 	public ValidationException(Errors error) {
+		super(error.toString());
 		this.errors.add(error);
 	}
 
 	public ValidationException(List<Errors> errors) {
+		super(errors.toString());
 		StringBuilder msg = new StringBuilder();
 		errors.forEach(e -> msg.append(e.getMsg()).append("\n"));
 		this.errors = errors;

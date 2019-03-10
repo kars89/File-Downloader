@@ -25,7 +25,7 @@ import com.kars.downloader.vo.FileDownloadRequestVO;
 public class FileDownloadController {
 
 	@Autowired
-	public FileDownloadService fileDownloadService;
+	protected FileDownloadService fileDownloadService;
 
 	@PostMapping("/download")
 	public String downloadFiles(@RequestBody FileDownloadRequestVO request) {
