@@ -44,6 +44,7 @@ public class FileDownloaderIntegrationTest {
 	private FileDownloadResultDao fileDownloadResultDao;
 
 	@Test
+	@Ignore
 	public void test_unsupportedProtocol() throws Exception {
 		URLDetailsVO invalidUrl = new URLDetailsVO("abcd://www.imks.lp/lk/io");
 		CompletableFuture<Long> future = fileDownloadService.downloadFileAsync(invalidUrl);
@@ -53,6 +54,7 @@ public class FileDownloaderIntegrationTest {
 	}
 
 	@Test
+	@Ignore
 	public void test_downloadHttpFileAsync() throws Exception {
 		URLDetailsVO httpUrlDetails = new URLDetailsVO(
 				"https://upload.wikimedia.org/wikipedia/commons/f/ff/Pizigani_1367_Chart_10MB.jpg");
@@ -63,6 +65,7 @@ public class FileDownloaderIntegrationTest {
 	}
 
 	@Test
+	@Ignore
 	public void test_downloadFtpFileAsync() throws Exception {
 		URLDetailsVO ftpUrlDetails = new URLDetailsVO("ftp://speedtest.tele2.net/3MB.zip");
 		CompletableFuture<Long> future = fileDownloadService.downloadFileAsync(ftpUrlDetails);
@@ -72,6 +75,7 @@ public class FileDownloaderIntegrationTest {
 	}
 
 	@Test
+	@Ignore
 	public void test_downloadSftpFileAsync() throws Exception {
 		URLDetailsVO sftpUrlDetails = new URLDetailsVO("sftp://test.rebex.net/pub/example/WinFormClient.png", "demo",
 				"password");
