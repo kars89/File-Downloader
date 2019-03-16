@@ -1,6 +1,6 @@
 # FileDownnloder
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.com/kars89/fileDownloader.svg?branch=master)](https://travis-ci.com/kars89/fileDownloader)
 
 File Downloaded is a simple spring boot app, which supports  download of large files in http, ftp and sftp requests.
 
