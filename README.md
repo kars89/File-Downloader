@@ -1,8 +1,8 @@
-# FileDownnloder
+# File Downloder
 
 [![Build Status](https://travis-ci.com/kars89/fileDownloader.svg?branch=master)](https://travis-ci.com/kars89/fileDownloader)
 
-File Downloaded is a simple spring boot app, which supports  download of large files in http, ftp and sftp requests.
+File Downloader is a simple spring boot app, which supports  download of large files in http, ftp and sftp requests.
 
 # Features!
 
